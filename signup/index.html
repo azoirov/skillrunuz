@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Sass -->
+    <link rel="stylesheet" href="../assets/style/signup.css">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/c413707f17.js" crossorigin="anonymous"></script>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <title>Регистрация | Skillrun.Uz</title>
+  </head>
+  <body>
+    
+    <div class="all w-100">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-6 text-left align-items-center">
+                    <h1 class="text-light"><a href="../index.html">skill<span class="">run.</span></a></h1>
+                </div>
+                <div class="col-6 align-items-center text-end"">
+                    <p>Уже есть аккаунт? <a href="#" class="">Вход</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="form-card">
+            <div class="step1 p-4">
+                <h4><i class="fas fa-user pr-1"></i> Общая информация</h4>
+                <p class="border-bottom pb-3">1 из 4</p>
+                <form class="row g-3 needs-validation" validate>
+                    <div class="col-lg-6 col-sm-12">
+                        <label for="name" class="form-label">Имя</label>
+                        <input type="text" placeholder="Имя" class="form-control" id="name" required>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <label for="surname" class="form-label">Фамиля</label>
+                        <input type="text" placeholder="Фамиля" class="form-control" id="surname" required>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <label for="email" class="form-label">Электронная почта</label>
+                        <input type="email" placeholder="Электронная почта" class="form-control" id="email" required>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <label for="date" class="form-label">Дата рождение</label>
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <label for="region" class="form-label">Регион</label>
+                        <select class="form-select" id="region" required>
+                            <option selected disabled value="">Выберите...</option>
+                            <option value="1">Ташкент</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <label for="region" class="form-label">Район</label>
+                        <select class="form-select" id="region" required>
+                            <option selected disabled value="">Выберите...</option>
+                            <option value="1">Ташкент</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="aboutMe" class="form-label">Про меня</label>
+                        <textarea placeholder="Напишите про себя" name="" id="aboutMe" cols="30" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <label for="">Пол</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                            Мужской
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Женский
+                            </label>
+                          </div>
+                    </div>
+                    <div class="col-12">
+                        <input class="form-check-input" type="checkbox" value="" id="agreement" required>
+                        <label class="form-check-label" for="agreement">
+                            Согласитесь с условиями
+                        </label>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary mt-2" type="button" id="toStep2">Продолжить</button>
+                        <button class="btn btn-outline-success mt-2" type="button" id="toStep2">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+            <div class="step2 p-4">
+                <h3><i class="fas fa-graduation-cap"></i> Образование</h3>
+                <p class="border-bottom pb-3">2 из 4</p>
+                    <p class="py-3">Добавьте школы, которые вы посещали, направления обучения и полученные степени.</p>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Добавить образование</button>
+                            <div class="eduResult row pt-2 border-top mt-3">
+                                <div class="col-8">
+                                    <p class="fw-bold">University of world Economy and Diplomacy</p>
+                                    <p>International Economy and management</p>
+                                    <p>Bachelor's degree</p>
+                                </div>
+                                <div class="col-4 row justify-content-between">
+                                    <p class="col-6"><span class="badge bg-info me-2">From</span>2019</p>
+                                    <p class="col-5"><span class="badge bg-info me-2">To</span>2023</p>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Добавить образование</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="row g-3 needs-validation" validate>
+                                            <div class="col-12 py-2">
+                                                <label for="school" class="form-label">Школа</label>
+                                                <input id="school" type="text" placeholder="пр: Университет мировой экономики и дипломатии" class="form-control">
+                                            </div>
+                                            <div class="col-12 py-2">
+                                                <label for="faculty" class="form-label">Область исследования</label>
+                                                <input id="faculty" type="text" placeholder="пр: Экономика" class="form-control">
+                                            </div>
+                                            <div class="col-12 py-2">
+                                                <label for="degree" class="form-label">Степень</label>
+                                                <input id="degree" type="text" placeholder="пр: Бакалавр" class="form-control">
+                                            </div>
+                                            <div class="col-sm-6 col-12 py-2">
+                                                <label for="fromEdu" class="form-label">С</label>
+                                                <select class="form-select" id="fromEdu" required>
+                                                    <option selected disabled>С</option>
+                                                    <option>2028</option>
+                                                    <option>2027</option>
+                                                    <option>2026</option>
+                                                    <option>2025</option>
+                                                    <option>2024</option>
+                                                    <option>2023</option>
+                                                    <option>2022</option>
+                                                    <option>2021</option>
+                                                    <option>2020</option>
+                                                    <option>2019</option>
+                                                    <option>2018</option>
+                                                    <option>2017</option>
+                                                    <option>2016</option>
+                                                    <option>2015</option>
+                                                    <option>2014</option>
+                                                    <option>2013</option>
+                                                    <option>2012</option>
+                                                    <option>2011</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6 col-12 py-2">
+                                                <label for="fromEdu" class="form-label">До (или ожидаемого года выпуска)</label>
+                                                <select class="form-select" id="toEdu" required>
+                                                    <option selected disabled>До (или ожидаемого года выпуска)</option>
+                                                    <option>2028</option>
+                                                    <option>2027</option>
+                                                    <option>2026</option>
+                                                    <option>2025</option>
+                                                    <option>2024</option>
+                                                    <option>2023</option>
+                                                    <option>2022</option>
+                                                    <option>2021</option>
+                                                    <option>2020</option>
+                                                    <option>2019</option>
+                                                    <option>2018</option>
+                                                    <option>2017</option>
+                                                    <option>2016</option>
+                                                    <option>2015</option>
+                                                    <option>2014</option>
+                                                    <option>2013</option>
+                                                    <option>2012</option>
+                                                    <option>2011</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                        <button type="button" class="btn btn-outline-success">Сохранить и добавить еще</button>
+                                        <button type="button" class="btn btn-primary">Сохранить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 border-top py-4 mt-3">
+                      <button class="btn btn-primary" type="button" id="backStep1">Назад</button>
+                      <button class="btn btn-primary" type="submit" id="toStep3">Продолжить</button>
+                    </div>
+            </div>
+            <div class="step3 p-4">
+                <h3><i class="fas fa-globe pr-1"></i> Язык</h3>
+                <p class="border-bottom pb-3">3 из 4</p>
+                <p class="py-3">Вы каким иностранным языком владеете?</p>
+                <div class="languageChoose row justify-content-center">
+                    <form class="row g-3 needs-validation" validate>
+                        <div class="col-md-6 col-12">
+                            <label for="language" class="form-label">Выберите язык</label>
+                            <select id="language" class="form-select">
+                                <option selected disabled>Выберите язык</option>
+                                <option>English</option>
+                                <option>English</option>
+                                <option>English</option>
+                                <option>English</option>
+                                <option>English</option>
+                                <option>English</option>
+                                <option>English</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 col-10">
+                            <label for="language" class="form-label">Знание языка</label>
+                            <select id="language" class="form-select">
+                                <option selected disabled>Знание языка</option>
+                                <option>Basic</option>
+                                <option>Conversational</option>
+                                <option>Fluent</option>
+                                <option>Native</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2 col-12">
+                            <label for="trash" class="form-label">Удалить</label>
+                            <button type="button" id="trash" class="btn btn-circle btn-outline-danger form-control">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                </form>
+                <div class="col-12 py-4">
+                    <button id="addLan" type="button" class="btn btn-warning"><i class="fas fa-plus pr-2"></i> Добавить язык</button>
+                </div>
+                <div class="col-12 border-top py-4 mt-3">
+                      <button class="btn btn-primary" type="button" id="backStep2">Назад</button>
+                      <button class="btn btn-primary" type="submit" id="toStep4">Продолжить</button>
+                </div>
+            </div>
+          </div>
+          <div class="step4 p-4">
+            <h3><i class="fas fa-globe pr-1"></i> Навык</h3>
+            <p class="border-bottom pb-3">4 из 4</p>
+            <div class="skillchoose row justify-content-center">
+                <form class="row g-3 needs-validation" validate>
+                    <div class="col-md-6 col-12">
+                        <label for="language" class="form-label">Ваши навыки</label>
+                        <select id="language" class="form-select">
+                            <option selected disabled>Ваши навыки</option>
+                            <option>Language</option>
+                            <option>Information Technology</option>
+                            <option>Finance</option>
+                            <option>Data Science</option>
+                            <option>Mobile development</option>
+                            <option>Economics</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-10">
+                        <label for="language" class="form-label">Ваш уровень</label>
+                        <select id="language" class="form-select">
+                            <option selected disabled>Ваш уровень</option>
+                            <option>Basic</option>
+                            <option>Junior</option>
+                            <option>Middle</option>
+                            <option>Senior</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-2 col-12">
+                        <label for="trash" class="form-label">Удалить</label>
+                        <button type="button" id="trash" class="btn btn-circle btn-outline-danger form-control">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+            </form>
+            <div class="col-12 py-4">
+                <button id="addLan" type="button" class="btn btn-warning"><i class="fas fa-plus pr-2"></i> Добавить Навык</button>
+            </div>
+            <form class="row g-3 needs-validation" validate>
+                <div class="col-md-6 col-12">
+                    <label for="language" class="form-label">Какими навыками хотите изучить</label>
+                    <select id="language" class="form-select">
+                        <option selected disabled>Навыки</option>
+                        <option>Language</option>
+                        <option>Information Technology</option>
+                        <option>Finance</option>
+                        <option>Data Science</option>
+                        <option>Mobile development</option>
+                        <option>Economics</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="col-sm-2 col-12">
+                    <label for="trash" class="form-label">Удалить</label>
+                    <button type="button" id="trash" class="btn btn-circle btn-outline-danger form-control">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div><div class="col-sm-2 col-12">
+                    <label for="trash" class="form-label">Добавить</label>
+                    <button type="button" id="addSkillsWant" class="btn btn-circle btn-outline-success form-control">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+        </form>
+            <div class="col-12 border-top py-4 mt-3">
+                  <button class="btn btn-primary" type="button" id="backStep3">Назад</button>
+                  <button class="btn btn-outline-success" type="submit" id="toStep4">Закончить</button>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+     
+    <!-- JavaScript -->
+    <script src="../assets/js/signup.js"></script>
+  </body>
+</html>

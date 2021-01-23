@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Sass -->
+    <link rel="stylesheet" href="../assets/style/account.css">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/c413707f17.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Аккаунт | SKILLRUN.UZ</title>
+</head>
+
+<body>
+    <div class="responsive">
+        <div class="row1-res">
+            <div class="searchbox">
+                <input type="text" placeholder="Search">
+                <div class="searchbox-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="hamburger-close">
+                <div class="gap-hamburger"></div>
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="row2-res">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="signup/">Выход</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="header">
+            <header>
+                <div class="logo">
+                    <h3>skill<span>run.</span></h3>
+                </div>
+                <div class="searchbox">
+                    <input type="text" placeholder="Search">
+                    <div class="input-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <ul class="nav">
+                    <li><a href="../home">Главная</a></li>
+                    <li><a href="#">Выход</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </header>
+        </div>
+        <div class="content">
+            <div class="sidebar nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                aria-orientation="vertical">
+                <div class="active" id="v-pills-general-tab" data-bs-toggle="pill" href="#v-pills-general" role="tab"
+                    aria-controls="v-pills-general" aria-selected="true">Общая</div>
+                <div class="" id="v-pills-edu-tab" data-bs-toggle="pill" href="#v-pills-edu" role="tab"
+                    aria-controls="v-pills-edu" aria-selected="false">Образования</div>
+                <div class="" id="v-pills-lan-tab" data-bs-toggle="pill" href="#v-pills-lan" role="tab"
+                    aria-controls="v-pills-lan" aria-selected="false">Язык</div>
+                <div class="" id="v-pills-skill-tab" data-bs-toggle="pill" href="#v-pills-skill" role="tab"
+                    aria-controls="v-pills-skill" aria-selected="false">Навык</div>
+                <div class="" id="v-pills-skill-tab" data-bs-toggle="pill" href="#v-pills-social" role="tab"
+                    aria-controls="v-pills-social" aria-selected="false">
+                    Социальные аккаунты
+                </div>
+            </div>
+            <div class="info-content tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel"
+                    aria-labelledby="v-pills-general-tab">
+                    <h5 class="fw-bold py-2"><i class="fas fa-user"></i> Общая информация</h5>
+                    <form class="g-3 row">
+                        <div class="col-12 avatar">
+                            <img src="../assets/images/avatar.png" alt="">
+                            <br>
+                            <input type="file" id="file" />
+                            <label for="file" class="btn">Аватар</label>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <label for="name" class="form-label">Имя</label>
+                            <input type="text" id="name" class="form-control" value="Asadbek">
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <label for="surname" class="form-label">Фамилия</label>
+                            <input type="text" id="surname" class="form-control" value="Zoirov">
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <label for="email" class="form-label">Эл. адрес</label>
+                            <input type="text" id="email" class="form-control" value="user@skillrun.uz">
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <label for="date" class="form-label">Дата рождения</label>
+                            <input type="date" id="date" class="form-control" value="2002-05-24">
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <label for="region" class="form-label">Регион</label>
+                            <select class="form-select" id="region" required>
+                                <option selected disabled value="">Ташкент</option>
+                                <option value="1">Ташкент</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <label for="region" class="form-label">Район</label>
+                            <select class="form-select" id="region" required>
+                                <option selected disabled value="">Мирабад</option>
+                                <option value="1">Юнусабад</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="aboutMe" class="form-label">Про меня</label>
+                            <textarea placeholder="Напишите про себя" name="" id="aboutMe" cols="30" rows="5"
+                                class="form-control">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab delectus explicabo totam praesentium officia accusamus cum laboriosam, tempora in consequatur incidunt? Quaerat voluptatem alias soluta, nisi esse velit ut expedita.</textarea>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <label for="">Пол</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" required>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Мужской
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" required>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Женский
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <input class="form-check-input" type="checkbox" value="" id="agreement" required>
+                            <label class="form-check-label" for="agreement">
+                                Согласитесь с условиями
+                            </label>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-outline-success mt-2" type="button" id="toStep2">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="v-pills-edu" role="tabpanel" aria-labelledby="v-pills-edu-tab">
+                    <h3><i class="fas fa-graduation-cap"></i> Образование</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="eduResult row pt-2 border-top mt-3">
+                                <div class="col-12 col-md-8">
+                                    <p class="fw-bold">University of world Economy and Diplomacy</p>
+                                    <p>International Economy and management</p>
+                                    <p>Bachelor's degree</p>
+                                </div>
+                                <div class="col-12 col-md-4 row justify-content-between">
+                                    <p class="col-6"><span class="badge bg-info me-2">From</span>2019</p>
+                                    <p class="col-6"><span class="badge bg-info me-2">To</span>2023</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Добавить образование</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Добавить образование</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="row g-3 needs-validation" validate>
+                                                <div class="col-12 py-2">
+                                                    <label for="school" class="form-label">Школа</label>
+                                                    <input id="school" type="text"
+                                                        placeholder="пр: Университет мировой экономики и дипломатии"
+                                                        class="form-control">
+                                                </div>
+                                                <div class="col-12 py-2">
+                                                    <label for="faculty" class="form-label">Область исследования</label>
+                                                    <input id="faculty" type="text" placeholder="пр: Экономика"
+                                                        class="form-control">
+                                                </div>
+                                                <div class="col-12 py-2">
+                                                    <label for="degree" class="form-label">Степень</label>
+                                                    <input id="degree" type="text" placeholder="пр: Бакалавр"
+                                                        class="form-control">
+                                                </div>
+                                                <div class="col-sm-6 col-12 py-2">
+                                                    <label for="fromEdu" class="form-label">С</label>
+                                                    <select class="form-select" id="fromEdu" required>
+                                                        <option selected disabled>С</option>
+                                                        <option>2028</option>
+                                                        <option>2027</option>
+                                                        <option>2026</option>
+                                                        <option>2025</option>
+                                                        <option>2024</option>
+                                                        <option>2023</option>
+                                                        <option>2022</option>
+                                                        <option>2021</option>
+                                                        <option>2020</option>
+                                                        <option>2019</option>
+                                                        <option>2018</option>
+                                                        <option>2017</option>
+                                                        <option>2016</option>
+                                                        <option>2015</option>
+                                                        <option>2014</option>
+                                                        <option>2013</option>
+                                                        <option>2012</option>
+                                                        <option>2011</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-6 col-12 py-2">
+                                                    <label for="fromEdu" class="form-label">До (или ожидаемого года
+                                                        выпуска)</label>
+                                                    <select class="form-select" id="toEdu" required>
+                                                        <option selected disabled>До (или ожидаемого года выпуска)
+                                                        </option>
+                                                        <option>2028</option>
+                                                        <option>2027</option>
+                                                        <option>2026</option>
+                                                        <option>2025</option>
+                                                        <option>2024</option>
+                                                        <option>2023</option>
+                                                        <option>2022</option>
+                                                        <option>2021</option>
+                                                        <option>2020</option>
+                                                        <option>2019</option>
+                                                        <option>2018</option>
+                                                        <option>2017</option>
+                                                        <option>2016</option>
+                                                        <option>2015</option>
+                                                        <option>2014</option>
+                                                        <option>2013</option>
+                                                        <option>2012</option>
+                                                        <option>2011</option>
+                                                    </select>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Закрыть</button>
+                                            <button type="button" class="btn btn-outline-success">Сохранить и добавить
+                                                еще</button>
+                                            <button type="button" class="btn btn-primary">Сохранить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 border-top py-4 mt-3">
+                        <button class="btn btn-outline-success" type="button" id="backStep1">Сохранить</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-lan" role="tabpanel" aria-labelledby="v-pills-lan-tab">
+                    <h3><i class="fas fa-globe pr-1"></i> Язык</h3>
+                    <div class="languageChoose row justify-content-center">
+                        <form class="row g-3 needs-validation" validate>
+                            <div class="col-md-6 col-12">
+                                <label for="language" class="form-label">Выберите язык</label>
+                                <select id="language" class="form-select">
+                                    <option selected disabled>Выберите язык</option>
+                                    <option>English</option>
+                                    <option>English</option>
+                                    <option>English</option>
+                                    <option>English</option>
+                                    <option>English</option>
+                                    <option>English</option>
+                                    <option>English</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 col-10">
+                                <label for="language" class="form-label">Знание языка</label>
+                                <select id="language" class="form-select">
+                                    <option selected disabled>Знание языка</option>
+                                    <option>Basic</option>
+                                    <option>Conversational</option>
+                                    <option>Fluent</option>
+                                    <option>Native</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2 col-12">
+                                <label for="trash" class="form-label">Удалить</label>
+                                <button type="button" id="trash" class="btn btn-circle btn-outline-danger form-control">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="col-12 py-4">
+                            <button id="addLan" type="button" class="btn btn-warning"><i class="fas fa-plus pr-2"></i>
+                                Добавить язык</button>
+                        </div>
+                        <div class="col-12 border-top pt-2">
+                            <button class="btn btn-outline-success" type="button" id="backStep1">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-skill" role="tabpanel" aria-labelledby="v-pills-skill-tab">
+                    <h3><i class="fas fa-globe pr-1"></i> Навык</h3>
+                    <div class="skillchoose row justify-content-center">
+                        <form class="row g-3 needs-validation" validate>
+                            <div class="col-md-6 col-12">
+                                <label for="language" class="form-label">Ваши навыки</label>
+                                <select id="language" class="form-select">
+                                    <option selected disabled>Ваши навыки</option>
+                                    <option>Language</option>
+                                    <option>Information Technology</option>
+                                    <option>Finance</option>
+                                    <option>Data Science</option>
+                                    <option>Mobile development</option>
+                                    <option>Economics</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 col-10">
+                                <label for="language" class="form-label">Ваш уровень</label>
+                                <select id="language" class="form-select">
+                                    <option selected disabled>Ваш уровень</option>
+                                    <option>Basic</option>
+                                    <option>Junior</option>
+                                    <option>Middle</option>
+                                    <option>Senior</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2 col-12">
+                                <label for="trash" class="form-label">Удалить</label>
+                                <button type="button" id="trash" class="btn btn-circle btn-outline-danger form-control">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="col-12 py-4">
+                            <button id="addLan" type="button" class="btn btn-warning"><i class="fas fa-plus pr-2"></i>
+                                Добавить Навык</button>
+                        </div>
+                        <form class="row g-3 needs-validation" validate>
+                            <div class="col-md-6 col-12">
+                                <label for="language" class="form-label">Какими навыками хотите изучить</label>
+                                <select id="language" class="form-select">
+                                    <option selected disabled>Навыки</option>
+                                    <option>Language</option>
+                                    <option>Information Technology</option>
+                                    <option>Finance</option>
+                                    <option>Data Science</option>
+                                    <option>Mobile development</option>
+                                    <option>Economics</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2 col-12">
+                                <label for="trash" class="form-label">Удалить</label>
+                                <button type="button" id="trash" class="btn btn-circle btn-outline-danger form-control">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                            <div class="col-sm-2 col-12">
+                                <label for="trash" class="form-label">Добавить</label>
+                                <button type="button" id="addSkillsWant"
+                                    class="btn btn-circle btn-outline-success form-control">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="col-12 border-top py-4 mt-3">
+                            <button class="btn btn-outline-success" type="button" id="backStep3">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-social" role="tabpanel" aria-labelledby="v-pills-social-tab">
+                    <h5 class="fw-bold py-2 border-bottom"><i class="fas fa-icons"></i> Социальные аккаунты</h5>
+                    <form class="g-3 row">
+                        <div class="col-md-6 col-12">
+                            <label for="telegram">Facebook</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fab fa-facebook"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Facebook account link"
+                                    aria-label="Username" aria-describedby="basic-addon1" id="telegram">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <label for="telegram">Linkedin</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Linkedin account link"
+                                    aria-label="Username" aria-describedby="basic-addon1" id="telegram">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <label for="telegram">Instagram</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Instagram Username"
+                                    aria-label="Username" aria-describedby="basic-addon1" id="telegram">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <label for="telegram">Telegram</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fab fa-telegram"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Telegram Username"
+                                    aria-label="Username" aria-describedby="basic-addon1" id="telegram">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <label for="telegram">Twitter</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fab fa-twitter"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Twitter account link"
+                                    aria-label="Username" aria-describedby="basic-addon1" id="telegram">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <label for="telegram">Git Hub</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Github Username"
+                                    aria-label="Username" aria-describedby="basic-addon1" id="telegram">
+                            </div>
+                        </div>
+                        <div class="col-12 border-top py-4 mt-3">
+                            <button class="btn btn-outline-success" type="button" id="backStep3">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+
+        <!-- JavaScript -->
+        <script src="../assets/js/account.js"></script>
+
+</body>
+
+</html>

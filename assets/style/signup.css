@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.all {
+  background-color: #08385f;
+  font-family: "Poppins", sans-serif;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.all .container h1 a {
+  text-decoration: none;
+  color: #fcfcfc;
+  font-family: "Poppins", sans-serif;
+}
+
+.all .container h1 a span {
+  color: #1bf58f;
+}
+
+.all .container p {
+  color: #fff;
+}
+
+.all .container p a {
+  color: #1bf58f;
+  text-decoration: none;
+}
+
+.all .form-card .step1,
+.all .form-card .step2,
+.all .form-card .step3,
+.all .form-card .step4 {
+  width: 70%;
+  height: 100%;
+  background-color: #fcfcfc;
+  margin: 5vh auto;
+  border-radius: 15px;
+}
+
+.all .form-card .step2,
+.all .form-card .step3,
+.all .form-card .step4 {
+  display: none;
+}
+/*# sourceMappingURL=signup.css.map */
